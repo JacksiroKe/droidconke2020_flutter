@@ -23,7 +23,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_stetho/flutter_stetho.dart';
+//import 'package:flutter_stetho/flutter_stetho.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
@@ -34,7 +34,7 @@ void main() async {
   BlocSupervisor.delegate = await HydratedBlocDelegate.build();
   Crashlytics.instance.enableInDevMode = true;
   if (DebugMode.isInDebugMode) {
-    Stetho.initialize();
+    //Stetho.initialize();
     // BlocSupervisor.delegate = SimpleBlocDelegate();
   } else {
     FlutterError.onError = Crashlytics.instance.recordFlutterError;

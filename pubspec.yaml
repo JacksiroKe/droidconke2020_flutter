@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_stetho: ^0.6.0-dev.1
+  #flutter_stetho: ^0.6.0-dev.1
   dio: ^3.0.9
   freezed_annotation:
   rxdart: ^0.24.1
